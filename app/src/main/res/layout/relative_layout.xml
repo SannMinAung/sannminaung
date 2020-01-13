@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Layout Example"/>
+
+    <TextView
+        android:id="@+id/txt_android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Development"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/txt_bootcamp"/>
+
+    <TextView
+        android:id="@+id/txt_bootcamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bootcamp"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/txt_layout"
+        android:layout_below="@id/txt_layout"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buttom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

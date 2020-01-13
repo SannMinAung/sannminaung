@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">\
+
+    <Button
+        android:id="@+id/btn_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintRight_toLeftOf="@id/btn_b"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+    <Button
+        android:id="@+id/btn_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        app:layout_constraintLeft_toRightOf="@id/btn_a"
+        app:layout_constraintRight_toLeftOf="@id/btn_c"
+        android:background="@drawable/rounded_button"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        app:layout_constraintLeft_toRightOf="@id/btn_b"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/rounded_button"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        app:layout_constraintRight_toLeftOf="@id/btn_e"
+        app:layout_constraintTop_toBottomOf="@id/btn_a"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        app:layout_constraintRight_toLeftOf="@id/btn_f"
+        app:layout_constraintTop_toBottomOf="@id/btn_b"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintLeft_toRightOf="@id/btn_d"/>
+
+    <Button
+        android:id="@+id/btn_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        app:layout_constraintTop_toBottomOf="@id/btn_c"
+        app:layout_constraintLeft_toRightOf="@id/btn_e"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintRight_toLeftOf="@id/btn_8"
+        app:layout_constraintTop_toBottomOf="@id/btn_d"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        app:layout_constraintLeft_toRightOf="@id/btn_7"
+        app:layout_constraintRight_toLeftOf="@id/btn_9"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintTop_toBottomOf="@id/btn_e"/>
+
+    <Button
+        android:id="@+id/btn_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        app:layout_constraintLeft_toRightOf="@id/btn_8"
+        app:layout_constraintTop_toBottomOf="@id/btn_f"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/buttom_corner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Corner"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintTop_toBottomOf="@id/btn_e"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/r34"
+        android:scaleType="centerInside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttom_corner"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
